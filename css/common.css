@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 나눔 고딕 400,700 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+:root {
+    /* 컬러 */
+    --green: #00CE39;
+    --light-gray: #DFE6E8;
+    --gray: #888;
+}
+
+/* 공통 설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: var(--green);
+    color: #fff;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.link-dark {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.flot-l {
+    display: inline-block;
+}
+
+.drag-none {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* 탑 버튼 */
+.top-btn {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 999;
+}

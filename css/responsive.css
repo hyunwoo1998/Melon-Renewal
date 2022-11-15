@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+@media all and (max-width: 1400px) {
+    .main-top {
+        width: 58em;
+    }
+
+    .footer-middle {
+        position: relative;
+        left: 6.2em;
+    }
+
+    .footer-bottom {
+        position: relative;
+        left: 5em;
+        width: 1100px;
+    }
+
+    .footer-bottom li span {
+        display: none;
+    }
+
+    .footer-bottom li:nth-child(4)::after {
+        content: "";
+    }
+
+    .main-top .card-text span {
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .main-top .card-body {
+        position: relative;
+        left: -1em;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .recommend>.text {
+        position: relative;
+        left: -2.5em;
+        width: 320px;
+    }
+
+    .recommend>.text:hover .recommend-text3 {
+        font-size: inherit;
+        transition: 0s;
+    }
+
+    .footer-middle {
+        position: relative;
+        left: 4.8em;
+    }
+
+    .footer-bottom {
+        position: relative;
+        left: 2.6em;
+        width: 900px;
+    }
+
+    .footer-bottom li:nth-child(4)::after {
+        content: "│";
+    }
+
+    .main-top .card-text span {
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .main-top,
+    .main-bottom {
+        width: 50em;
+    }
+
+    .write-section textarea {
+        width: 38.5em;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .screen-half {
+        display: block;
+    }
+
+    footer {
+        border: 0;
+    }
+
+    .sub-menu,
+    .info-btn,
+    .notice,
+    .footer-top,
+    .footer-middle,
+    .footer-line,
+    .footer-bottom>ul>li {
+        display: none;
+    }
+
+    .footer-bottom>ul>li:last-child {
+        position: relative;
+        top: 1.5em;
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .main-top,
+    .main-bottom {
+        width: 43em;
+    }
+
+    .main-top .card-body {
+        position: relative;
+        left: 0;
+    }
+
+    .main-top .card-text span {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .album-title {
+        margin: .5em 0;
+        text-align: center;
+    }
+
+    .artist-img {
+        top: 5.6em;
+        left: 10.5em;
+    }
+
+    .album-data>ul>li:first-child {
+        width: 13%;
+    }
+
+    .album-data {
+        position: relative;
+        right: 1.3em;
+    }
+
+    .estimate {
+        margin: 1.5em 0 0 .8em;
+    }
+
+    .album-right {
+        right: .8em;
+        bottom: .3em;
+    }
+
+    .write-section textarea {
+        width: 31.5em;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .search-form {
+        margin: 0 auto;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .main-top {
+        width: 30em;
+    }
+
+    .main-top .card-body {
+        position: relative;
+        left: -1em;
+    }
+
+    .main-top .card-text span {
+        font-size: .8em;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .album {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .album-title {
+        margin: .5em .8em;
+    }
+
+    .album-data {
+        margin: 2em .8em;
+    }
+
+    .estimate {
+        margin: 1.5em 0 1em 1.5em;
+    }
+
+    .album-right {
+        right: 1.5em;
+        bottom: 1.2em;
+    }
+
+    .album-share {
+        top: 1.6em;
+    }
+
+    .main-bottom {
+        width: 30em;
+    }
+
+    #song-list {
+        margin-top: 1em;
+    }
+
+    #song-list>ul {
+        right: 1.7em;
+    }
+
+    .song-list-head,
+    #song-list>ul>li:nth-child(1),
+    #song-list>ul>li:nth-child(4),
+    #song-list>ul>li:nth-child(8) {
+        display: none !important;
+    }
+
+    #song-list>ul>li:nth-child(3) {
+        width: 82%;
+    }
+
+    #song-list>ul>li:nth-child(n+5) {
+        margin-left: 1em;
+    }
+
+    #song-list>ul>li {
+        border: none;
+    }
+
+    .write-section textarea {
+        width: 19em;
+    }
+
+    .cmmt {
+        display: none;
+    }
+
+    .cmmt2 {
+        position: relative;
+        display: flex;
+        padding: .4em 1.2em 0;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .nickname {
+        width: 25em;
+        margin: 0 0 .5em;
+        padding: 0 0 .5em;
+        font-size: .9em;
+        font-weight: 700;
+        border-bottom: 1px dashed var(--gray);
+    }
+
+    .comment-write {
+        display: none;
+    }
+
+    .cmmt-order>ul {
+        justify-content: center;
+    }
+
+    .cmmt-order>ul>li {
+        padding: .4em 1em;
+        margin: 0 .3em 3em;
+        border-radius: 10em;
+        background: var(--green);
+        text-align: center;
+    }
+
+    .cmmt-order>ul>li::before {
+        content: "";
+        padding: 0;
+    }
+
+    .cmmt-order a {
+        color: white;
+    }
+
+    .write-btn {
+        position: absolute;
+        display: block;
+        right: .2em;
+        top: 6em;
+    }
+
+    .write-btn>button {
+        padding: .4em .8em;
+        border: none;
+        border-radius: .3em;
+        border: 1px solid var(--gray);
+        box-shadow: 1px 1px 1px 1px var(--gray);
+        background: #fdfdfd;
+        font-size: .8em;
+    }
+
+    .page-group,
+    .search-box {
+        display: none;
+    }
+}
+
+@media all and (max-width: 576px) {
+    header {
+        width: 26em;
+        margin: 0 auto;
+    }
+
+    .explain {
+        display: none;
+    }
+
+    .footer-bottom {
+        position: relative;
+        left: -.7em;
+        width: 400px;
+    }
+
+    .main-top {
+        width: 25em;
+    }
+
+    .main-top .card-text span {
+        width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .9em;
+    }
+
+    .album {
+        width: 24em;
+    }
+
+    .album-data>ul>li:first-child {
+        width: 16%;
+        color: var(--gray);
+    }
+
+    .main-bottom {
+        width: 25em;
+    }
+
+    #song-list>ul {
+        right: 1.4em;
+    }
+
+    .nickname {
+        width: 18.5em;
+        border-bottom: 1px dashed var(--gray);
+    }
+
+    .recommend-content>* {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommend-title::after {
+        content: "";
+    }
+}

@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+li {
+    cursor: pointer;
+}
+
+/* 1번째 캐러셀 */
+.main-top {
+    position: relative;
+    width: 70em;
+    top: 2em;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.item>img {
+    border: 1px solid var(--light-gray);
+    border-radius: .2em;
+}
+
+/* 2,3번째 캐러셀 */
+.mini-album {
+    position: relative;
+}
+
+.mini-album>a {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.album-list {
+    position: relative;
+}
+
+.fa-angle-right {
+    padding-left: .6em;
+    font-size: .6em;
+}
+
+.list-img,
+.list-img>img {
+    position: relative;
+    padding: .05em;
+    border-radius: 20em;
+}
+
+.text-bg {
+    display: none;
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    border-radius: 20em;
+    background: var(--green);
+    text-align: center;
+    opacity: .6;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.album-text {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    transition: all .5s ease 0s;
+}
+
+.album-text1 {
+    width: 80%;
+    height: 70%;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(10%);
+}
+
+.album-text2 {
+    width: 85%;
+    height: 55%;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(10%);
+}
+
+.album-play {
+    width: 95%;
+    height: 40%;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.album-text:hover {
+    color: #fff;
+}
+
+.list-img:hover img {
+    filter: blur(.1em);
+    animation: image-rotate 8s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.list-img:hover .text-bg,
+.list-img:hover .album-text {
+    display: block;
+}
+
+.fa-circle-play {
+    transition: .3s ease 0s;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
+@keyframes image-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 이슈 */
+.hot-issue {
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.hot-issue>ul {
+    width: 98%;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid var(--light-gray);
+    transform: translate(1.2%);
+}
+
+.hot-issue>ul>li {
+    position: relative;
+    right: .8em;
+}
+
+.hot-issue li:nth-child(2) {
+    font-size: small;
+    color: var(--gray);
+}
+
+.card {
+    margin: .5em 0;
+    border: none;
+}
+
+.card img {
+    border-radius: .3em;
+    border: 1px solid var(--light-gray);
+}
+
+.card-text span {
+    display: block;
+    font-size: .9em;
+    text-align: left;
+}
+
+.card-text span:last-child {
+    margin-bottom: 0;
+    color: var(--gray);
+}
+
+.card-body small {
+    font-size: .8em;
+}
+
+.card-body small:first-child {
+    color: var(--green);
+}
+
+.card-body small:last-child {
+    color: var(--gray);
+}
+
+.card-body small::before {
+    content: "│";
+}
+
+.card-body small:first-child::before {
+    content: "";
+}
+
+/* 공지사항 */
+.notice {
+    width: 98%;
+    padding-top: 1em;
+    font-size: .8em;
+    border-top: 1px solid var(--light-gray);
+    transform: translate(1.2%);
+}
+
+.notice>ul>li {
+    position: relative;
+    right: 2em;
+}

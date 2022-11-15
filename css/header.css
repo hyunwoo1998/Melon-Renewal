@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+header {
+    position: relative;
+    background: #fff;
+}
+
+/* 고정바 */
+.form-control {
+    border: 2px solid var(--green);
+    border-radius: 1em 1em .1em;
+    font-size: .8em;
+    color: var(--green);
+    transition: all 0.2s ease-out;
+}
+
+.form-control:hover {
+    position: relative;
+    outline: 5px solid #00ce3a67;
+}
+
+.form-control:focus {
+    border: 2px solid var(--green);
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form>input::placeholder {
+    color: var(--gray);
+}
+
+.search-icon {
+    position: absolute;
+    top: .1em;
+    right: 0;
+    padding: .3em .5em;
+    border-radius: 0 .8em .2em;
+    background: var(--green);
+}
+
+.recommend-icon {
+    position: absolute;
+    top: .3em;
+    right: 2.8em;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.recommend {
+    display: none;
+    position: absolute;
+    top: 2.5em;
+    width: 100%;
+    z-index: 100;
+    border: 2px solid var(--green);
+    border-radius: .5em;
+    background: white;
+}
+
+.fa-up-long {
+    color: #FD5D5D;
+}
+
+.fa-down-long {
+    color: #39AEA9;
+}
+
+.recommend>.text {
+    position: relative;
+    right: 1em;
+}
+
+.recommend>.text>ul {
+    width: 100%;
+    margin: .5em 0;
+    padding-left: 2em;
+    font-size: .8em;
+}
+
+.recommend>.text>ul>li {
+    position: relative;
+    height: 100%;
+}
+
+.recommend>.text>ul>li:nth-child(2) {
+    width: 16%;
+    font-size: .9em;
+}
+
+.recommend>.text:hover {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.recommend>.text:hover .fa-up-long,
+.recommend>.text:hover .fa-down-long {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.recommend-text3 {
+    transition: all .2s ease;
+}
+
+.recommend>.text:hover .recommend-text3 {
+    font-size: 1.2em;
+}
+
+.recommend .recommend-text1 {
+    font-weight: 700;
+}
+
+.btn-success {
+    border: none;
+    border-radius: 1em 1em .2em;
+    background: var(--green);
+    font-size: .9em;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+    background: var(--green);
+    outline: 4px solid #00ce3a67;
+}
+
+.nav-underline {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-underline:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: none repeat scroll 0 0 transparent;
+    background-color: var(--green);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.menuBar {
+    display: none;
+    position: absolute;
+    width: 150%;
+    top: 2.82em;
+    right: -25%;
+    z-index: 500;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #fcfcfc;
+    font-size: .9em;
+    color: #191919;
+}
+
+.menuBar>li {
+    padding: .3em 0;
+    transition: all .1s ease-out;
+}
+
+.menuBar:last-child {
+    border-radius: 0 0 .3em .3em;
+}
+
+.menuBar>li:hover {
+    border-left: 4px solid var(--green);
+    color: var(--green);
+    font-weight: 700;
+}
+
+.sub-menu a {
+    margin: 0 .1em;
+    font-size: 1em;
+}
+
+.screen-half {
+    position: relative;
+    display: none;
+}
+
+.bar-icon {
+    position: absolute;
+    bottom: 3.6em;
+    left: 2em;
+    padding: .3em .6em;
+    border-radius: 10em;
+    background: var(--green);
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid var(--light-gray);
+    background: var(--green);
+}
+
+.offcanvas-header .user-icon {
+    position: relative;
+    left: 1em;
+    padding: .3em .6em;
+    border: 3px solid #00ce3a67;
+    border-radius: 10em;
+    background: var(--light-gray);
+    font-size: 1.2em;
+    color: var(--gray);
+}
+
+.offcanvas-header .login {
+    position: relative;
+    right: 4.5em;
+    color: #fff;
+    ;
+    font-weight: 700;
+}
+
+.offcanvas-body span {
+    margin-left: .6em;
+}
+
+.offcanvas-body .btn-group-vertical {
+    margin-left: 1.6em;
+}
+
+.offcanvas-body .btn-success {
+    padding: .6em;
+    border-radius: 1em 1em 1em .2em;
+}

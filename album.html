@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>앨범 정보>멜론</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/albumMain.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <header class="pt-4 border-bottom wrapper">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-evenly align-items-center mb-3">
+        <a href="./index.html" class="mb-lg-0 drag-none">
+          <img src="./img/logo.png" alt="logo" height="50">
+        </a>
+        <form class="col-12 col-lg-3 mb-lg-0 me-lg-3 search-form my-2">
+          <input type="search" class="form-control" placeholder="검색">
+          <a class="search-icon"><i class="fa-solid fa-magnifying-glass text-light"></i></a>
+          <p class="recommend-icon"><i class="icon fa-solid fa-caret-down"></i></p>
+          <ul class="recommend">
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">01</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-minus"></i></li>
+                <li class="flot-l recommend-text3">아이유</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">02</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-up-long"></i><b class="fa-up-long">6</b>
+                </li>
+                <li class="flot-l recommend-text3">봄여름가을겨울</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">03</li>
+                <li class="flot-l recommend-text2  ms-2"><i class="fa-solid fa-down-long"></i><b
+                    class="fa-down-long">2</b></li>
+                <li class="flot-l recommend-text3">나의 아저씨 OST</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">04</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-up-long"></i><b class="fa-up-long">15</b>
+                </li>
+                <li class="flot-l recommend-text3">고백</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">05</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-down-long"></i><b
+                    class="fa-down-long">3</b></li>
+                <li class="flot-l recommend-text3">임창정</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">06</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-up-long"></i><b class="fa-up-long">18</b>
+                </li>
+                <li class="flot-l recommend-text3">자장가</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">07</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-down-long"></i><b
+                    class="fa-down-long">3</b></li>
+                <li class="flot-l recommend-text3">임영웅</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">08</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-up-long"></i><b class="fa-up-long">127</b>
+                </li>
+                <li class="flot-l recommend-text3">방탄소년단</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">09</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-down-long"></i><b
+                    class="fa-down-long">3</b></li>
+                <li class="flot-l recommend-text3">친구라도 될 걸 그랬어</li>
+              </ul>
+            </li>
+            <li class="text list-none">
+              <ul>
+                <li class="flot-l recommend-text1">10</li>
+                <li class="flot-l recommend-text2 ms-2"><i class="fa-solid fa-up-long"></i><b class="fa-up-long">99</b>
+                </li>
+                <li class="flot-l recommend-text3">POP</li>
+              </ul>
+            </li>
+          </ul>
+        </form>
+        <div class="info-btn">
+          <button class="btn btn-success login">로그인</button>
+          <button class="btn btn-success sign-up">회원가입</button>
+        </div>
+      </div>
+      <ul class="nav col-lg-auto me-lg-auto justify-content-center mb-md-0 drag-none sub-menu">
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">멜론차트</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>TOP100</li>
+            <li>일간</li>
+            <li>주간</li>
+            <li>월간</li>
+            <li>시대</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">최신음악</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>최신 곡</li>
+            <li>최신 앨범</li>
+            <li>최신 뮤직비디오</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">장르음악</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>한국 대중 음악</li>
+            <li>해외 POP 음악</li>
+            <li>그외 인기 장르</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">멜론DJ</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>투데이</li>
+            <li>전문가 선곡</li>
+            <li>#테마장르</li>
+            <li>파워DJ</li>
+            <li>인기</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">멜론TV</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>오늘은 뭘 볼까</li>
+            <li>뮤직비디오</li>
+            <li>멜론 오리지널</li>
+            <li>아티스트 업데이트</li>
+            <li>방송</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">스타포스트</a>
+          <ul class="nav flex-column justify-content-center text-center menuBar">
+            <li>NOW</li>
+            <li>아티스트 랭킹</li>
+            <li>마이 랭킹</li>
+          </ul>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">매거진</a>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">뮤직어워드</a>
+        </li>
+        <li class="nav-link px-3 nav-underline">
+          <a class="link-dark">어학</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="screen-half">
+    <a href="#offcanvasExample" class="bar-icon shadow-sm" data-bs-toggle="offcanvas" role="button"
+      aria-controls="offcanvasExample">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+      <div class="offcanvas-header">
+        <a class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="login">로그인하세요</a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="menu-list">
+          <ul>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>멜론홈</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-music"></i>
+              <span>최신음악</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>멜론차트</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-video"></i>
+              <span>뮤직비디오</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-trophy"></i>
+              <span>멜론뮤직어워드</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>이벤트</span>
+            </li>
+            <li class="list-none my-3">
+              <i class="fa-solid fa-star"></i>
+              <span>공지사항</span>
+            </li>
+          </ul>
+        </div>
+        <hr class="dropdown-divider">
+        <div class="btn-group-vertical">
+          <button class="btn-success my-1">멜론6.0 둘러보기</button>
+          <button class="btn-success my-1">멜론 스튜디오</button>
+          <button class="btn-success my-1">Windows 플레이어</button>
+          <button class="btn-success my-1">Mac 플레이어</button>
+          <button class="btn-success my-1">iPad</button>
+          <button class="btn-success my-1">고객센터</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="container">
+    <div class="main-top mb-5">
+      <h4><b>앨범 정보</b></h4>
+      <section class="album">
+        <img src="./img/main_album.jpg" class="album-img" alt="album-img">
+        <div class="album-content">
+          <div class="album-detail">
+            <div class="album-title">
+              <h6>[정규]</h6>
+              <h4>What I've Become</h4>
+              <a href="" class="artist">
+                <h5>Ashes Remain</h5>
+                <img src="./img/artist_img.jpg" class="artist-img" alt="artist-img">
+              </a>
+            </div>
+            <div class="album-data">
+              <ul>
+                <li>발매일</li>
+                <li>2020.11.16</li>
+              </ul>
+              <ul>
+                <li>장르</li>
+                <li>CCM, 국외CCM</li>
+              </ul>
+              <ul>
+                <li>발매사</li>
+                <li>Absolute Label Services</li>
+              </ul>
+              <ul>
+                <li>기획사</li>
+                <li>Absolute Label Services</li>
+              </ul>
+            </div>
+            <div class="estimate">
+              <span class="estimate-star">★★★★★</span>
+              <span class="estimate-num">5.0</span>
+              <span class="estimate-user">20</span>
+            </div>
+          </div>
+          <div class="album-right">
+            <div class="album-btn">
+              <a href="">
+                <i class="fa-regular fa-heart"></i>
+                <span>49</span>
+              </a>
+              <a href="">
+                <i class="fa-solid fa-download"></i>
+                <span>앨범다운</span>
+              </a>
+              <a href="">
+                <i class="fa-solid fa-download"></i>
+                <span>FLAC앨범다운</span>
+              </a>
+              <a href="">
+                <i class="fa-solid fa-gift"></i>
+                <span>선물하기</span>
+              </a>
+            </div>
+            <div class="album-share">
+              <ul>
+                <li><span class="share-text">공유</span></li>
+                <li><a href=""><i class="fa-solid fa-user share"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f share"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter share"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="main-bottom">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#song-list"
+            type="button">수록곡(12)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#comment" type="button">댓글(5)</button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="song-list">
+          <ul class="song-list-head mt-3">
+            <li><input type="checkbox" id="allCheck"></li>
+            <li>번호</li>
+            <li>곡정보</li>
+            <li>좋아요</li>
+            <li>듣기</li>
+            <li>담기</li>
+            <li>다운</li>
+            <li>뮤비</li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>1</li>
+            <li class="title">Keep Me Breathing</li>
+            <li><i class="fa-regular fa-heart"></i><span>17</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>2</li>
+            <li>On My Own</li>
+            <li><i class="fa-regular fa-heart"></i><span>906</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>3</li>
+            <li>Everything Good</li>
+            <li><i class="fa-regular fa-heart"></i><span>12</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>4</li>
+            <li>Without You</li>
+            <li><i class="fa-regular fa-heart"></i><span>29</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>5</li>
+            <li>Come Alive</li>
+            <li><i class="fa-regular fa-heart"></i><span>4</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>6</li>
+            <li>Unbroken</li>
+            <li><i class="fa-regular fa-heart"></i><span>7</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>7</li>
+            <li>End of Me</li>
+            <li><i class="fa-regular fa-heart"></i><span>14</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>8</li>
+            <li>Right Here</li>
+            <li><i class="fa-regular fa-heart"></i><span>27</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>9</li>
+            <li>Change My Life</li>
+            <li><i class="fa-regular fa-heart"></i><span>17</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>10</li>
+            <li>Take It Away</li>
+            <li><i class="fa-regular fa-heart"></i><span>3</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>11</li>
+            <li>Inside of Me</li>
+            <li><i class="fa-regular fa-heart"></i><span>1</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+          <ul>
+            <li><input type="checkbox" class="chk"></li>
+            <li>12</li>
+            <li>I Won't Run Away</li>
+            <li><i class="fa-regular fa-heart"></i><span>5</span></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-download"></i></li>
+            <li><i class="fa-solid fa-video"></i></li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="comment">
+          <div class="comment-write mt-3">
+            <a href="">
+              <img src="./img/user_img.jpg" alt="user">
+            </a>
+            <div class="write-section">
+              <textarea></textarea>
+              <div class="write-add-btn">
+                <button><i class="fa-solid fa-music"></i></button>
+                <button><i class="fa-solid fa-camera"></i></button>
+                <button><i class="fa-solid fa-video"></i></button>
+                <button><i class="fa-solid fa-link"></i></button>
+              </div>
+            </div>
+            <div class="comment-submit">
+              <button type="submit">등록</button>
+            </div>
+          </div>
+          <div class="comment-list mt-2">
+            <div class="cmmt-order">
+              <ul>
+                <li><a href="" class="order-active">최신순</a></li>
+                <li><a href="">추천순</a></li>
+                <li><a href="">답글순</a></li>
+              </ul>
+            </div>
+
+            <div class="write-btn">
+              <button>글쓰기</button>
+            </div>
+            <div class="cmmt">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <span class="nickname">Nickname</span>
+              <div>
+                <ul class="comment-content">
+                  <li>
+                    <span>완벽하다</span>
+                  </li>
+                  <li class="date">
+                    <span>2022.03.22 12:25</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>1</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>3</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <span class="nickname">강아지</span>
+              <div>
+                <ul class="comment-content">
+                  <li>
+                    <span>나만 알고 싶은 음반…</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.06.18 20:32</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>0</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <span class="nickname">고양이</span>
+              <div>
+                <ul class="comment-content">
+                  <li>
+                    <span>이 노래 듣고 다른 노래까지 다 들어봤는데 너무 좋네요</span>
+                  </li>
+                  <li class="song-recommend">
+                    <ul>
+                      <li>
+                        <img src="./img/main_album.jpg" alt="">
+                      </li>
+                      <li class="px-3">
+                        <a href=""><i class="fa-solid fa-play recommend-circle"></i></a>
+                        <a href=""><i class="fa-solid fa-download recommend-circle"></i></a>
+                      </li>
+                      <li class="recommend-content">
+                        <b class="recommend-title">On My Own</b>
+                        <span>Ashes Remain</span>
+                        <p class="recommend-album">What I've Become</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="date">
+                    <span>2021.06.04 02:01</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>6</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>9</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <span class="nickname">개구리</span>
+              <div>
+                <ul class="comment-content">
+                  <li>
+                    <span>최고의 명곡</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.03.03 10:51</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>3</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <span class="nickname">가나다라마바사</span>
+              <div>
+                <ul class="comment-content">
+                  <li>
+                    <span>드디어 나왔네요!</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.01.28 14:03</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>0</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="cmmt2">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <div>
+                <ul class="comment-content">
+                  <span class="nickname">Nickname</span>
+                  <li>
+                    <span>완벽하다</span>
+                  </li>
+                  <li class="date">
+                    <span>2022.03.22 12:25</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>1</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>3</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt2">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <div>
+                <ul class="comment-content">
+                  <span class="nickname">강아지</span>
+                  <li>
+                    <span>나만 알고 싶은 음반…</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.06.18 20:32</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>0</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt2">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <div>
+                <ul class="comment-content">
+                  <span class="nickname">고양이</span>
+                  <li>
+                    <span>이 노래 듣고 다른 노래까지 다 들어봤는데 너무 좋네요</span>
+                  </li>
+                  <li class="song-recommend">
+                    <ul>
+                      <li>
+                        <img src="./img/main_album.jpg" alt="">
+                      </li>
+                      <li class="px-3">
+                        <a href=""><i class="fa-solid fa-play recommend-circle"></i></a>
+                        <a href=""><i class="fa-solid fa-download recommend-circle"></i></a>
+                      </li>
+                      <li class="recommend-content">
+                        <b class="recommend-title">On My Own</b>
+                        <span>Ashes Remain</span>
+                        <p class="recommend-album">What I've Become</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="date">
+                    <span>2021.06.04 02:01</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>6</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>9</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt2">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <div>
+                <ul class="comment-content">
+                  <span class="nickname">개구리</span>
+                  <li>
+                    <span>최고의 명곡</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.03.03 10:51</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>3</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cmmt2">
+              <a href="" class="user-img">
+                <img src="./img/user_img.jpg" alt="user">
+              </a>
+              <div>
+                <ul class="comment-content">
+                  <span class="nickname">가나다라마바사</span>
+                  <li>
+                    <span>드디어 나왔네요!</span>
+                  </li>
+                  <li class="date">
+                    <span>2021.01.28 14:03</span>
+                  </li>
+                  <li class="reply">
+                    <a href="">답글 <b>0</b>개</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-btn">
+                <ul>
+                  <li>
+                    <i class="fa-regular fa-thumbs-up comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-thumbs-down comment-btn-circle"></i>
+                    <span>0</span>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell comment-btn-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="page-group">
+              <ul class="page">
+                <li>
+                  <a class="arrow left">
+                    <i class="fa-solid fa-angles-left angle"></i>
+                    <i class="fa-solid fa-angle-left angle"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="num active">1</a>
+                  <a class="num">2</a>
+                </li>
+                <li>
+                  <a class="arrow right">
+                    <i class="fa-solid fa-angle-right angle"></i>
+                    <i class="fa-solid fa-angles-right angle"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search-box">
+              <select>
+                <option value="content" selected>내용</option>
+                <option value="user">작성자</option>
+              </select>
+              <input type="text" class="search-text">
+              <button class="search-btn" type="submit">검색</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top container py-3">
+      <ul class="list-none">
+        <li class="flot-l ms-3">멜론6.0 둘러보기</li>
+        <li class="flot-l ms-3">멜론 스튜디오</li>
+        <li class="flot-l ms-3">Windows 플레이어</li>
+        <li class="flot-l ms-3">Mac 플레이어</li>
+        <li class="flot-l ms-3">iPad</li>
+        <li class="flot-l ms-3">고객센터</li>
+      </ul>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-middle container mt-4 mb-1">
+      <ul class="list-none">
+        <li class="flot-l">이용약관</li>
+        <li class="flot-l"><b>위치기반서비스 이용약관</b></li>
+        <li class="flot-l"><b>개인정보처리방침</b></li>
+        <li class="flot-l">청소년보호정책</li>
+        <li class="flot-l">제휴/프로모션문의</li>
+        <li class="flot-l">이메일주소무단수집거부</li>
+        <li class="flot-l">파트너센터</li>
+      </ul>
+    </div>
+    <div class="footer-bottom container mb-5">
+      <ul class="list-none">
+        <li class="flot-l"><b>(주)카카오엔터테인먼트</b>&nbsp; 경기도 성남시 분당구 판교역로 221</li>
+        <li class="flot-l">대표이사 : 이진수, 김성수</li>
+        <li class="flot-l">사업자등록번호 : 220-88-02594</li>
+        <li class="flot-l">통신판매업신고번호 : 2018-성남분당B-0004 &nbsp;<span>사업자정보확인</span></li>
+        <li class="flot-l">문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</li>
+        <li class="flot-l">이메일 : melon_info@kakaoent.com</li>
+        <li class="flot-l">호스팅서비스사업자 : (주)카카오엔터테인먼트</li>
+        <li class="flot-l">© Kakao Entertainment Corp.</li>
+      </ul>
+    </div>
+  </footer>
+  <a class="top-btn" href="#"><img src="./img/top_btn.png" alt="top_btn"></a>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- My JS -->
+  <script src="./js/common.js"></script>
+  <script src="./js/album.js"></script>
+</body>
+
+</html>

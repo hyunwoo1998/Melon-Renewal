@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 푸터 */
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2em;
+    border-top: 1px solid gray;
+}
+
+footer li {
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+.footer-top {
+    color: gray;
+    font-weight: 700;
+    font-size: .9em;
+    text-align: right;
+}
+
+.footer-top ul {
+    position: relative;
+    right: 11em;
+    margin: 0 auto;
+}
+
+.footer-top li:hover {
+    color: var(--green);
+}
+
+.footer-line {
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-middle {
+    position: relative;
+    left: 7.2em;
+    font-size: .8em;
+}
+
+.footer-bottom {
+    position: relative;
+    left: 6.8em;
+    width: 1300px;
+    font-size: .75em;
+    color: gray;
+}
+
+.footer-middle li::after,
+.footer-bottom li::after {
+    content: "│";
+}
+
+.footer-middle li:last-child::after,
+.footer-bottom li:last-child::after {
+    content: "";
+}
+
+.footer-bottom li:nth-child(4)::after {
+    content: " ‣";
+}
