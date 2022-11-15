@@ -7,5 +7,5 @@
 - Apply "[Owl Carousel 2](https://github.com/OwlCarousel2/OwlCarousel2)"
 
 ## Demo & Preview
-- [Demo](https://hyunwoo1998.github.io/melon-renewal/index.html)<br>
+- [Demo](https://hyunwoo1998.github.io/Melon-Renewal/)<br>
 <img src="./img/preview.jpg">
